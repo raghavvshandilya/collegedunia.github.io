@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Page 1</title>
+    <!-- Google Analytics Tracking Code -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2CPYM5P6Q5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2CPYM5P6Q5');  <!-- Replace with your Analytics ID -->
+    </script>
+</head>
+<body>
+    <h1>Welcome to Dummy Page 1</h1>
+    <p>This is a test page for Google Analytics tracking.</p>
+
+    <!-- Event Tracking Example -->
+    <button onclick="triggerEvent()">Click Me!</button>
+    
+    <script>
+      function triggerEvent() {
+        gtag('event', 'button_click', {
+          'event_category': 'User Interaction',
+          'event_label': 'Dummy Button Click'
+        });
+        alert("Button Click Event Sent to Google Analytics!");
+      }
+    </script>
+</body>
+</html>
